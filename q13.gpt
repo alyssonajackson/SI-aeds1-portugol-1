@@ -3,7 +3,7 @@
 seja maior que 10.
 */
 
-algoritmo base;
+algoritmo eh_maior_que_dez;
 
 variáveis
     continue: caractere;

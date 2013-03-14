@@ -6,7 +6,7 @@ distribuidor seja de 28% e os impostos 45%. Escrever um algoritmo que leia o cus
 de um carro e informe o custo ao consumidor do mesmo.
 */
 
-algoritmo base;
+algoritmo custo_automovel;
 
 variáveis
     continue: caractere;
