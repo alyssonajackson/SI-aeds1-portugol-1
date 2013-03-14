@@ -11,7 +11,7 @@ variáveis
 fim-variáveis
 
 início
-    continue:= 1;
+    continue:= 'y';
 
     enquanto continue <> 'n' faça
 
