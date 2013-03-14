@@ -1,0 +1,33 @@
+/*
+15. Faça um algoritmo que receba um número e diga se este número está no intervalo entre
+100 e 200.
+*/
+
+algoritmo verifica_intervalo;
+
+variáveis
+     continue: caractere;
+     n: real;
+fim-variáveis
+
+início
+
+     continue:= 'y';
+
+     enquanto continue <> 'n' faça
+
+        imprima("Informe um número");
+        n:= leia(); 
+
+        se n >= 100 e n <= 200 então
+            imprima("O valor informado (", n, ") ESTÁ no intervalo entre 100 e 200");
+        senão
+            imprima("O valor informado (", n, ") NÃO ESTÁ no intervalo entre 100 e 200");
+        fim-se
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+     fim-enquanto
+
+fim
