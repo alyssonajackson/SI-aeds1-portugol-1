@@ -1,0 +1,37 @@
+/*
+5. Escrever um algoritmo que leia o nome de um aluno e as notas das três provas que ele
+obteve no semestre. No final informar o nome do aluno e a sua média (aritmética).
+*/
+
+algoritmo notas;
+
+variáveis
+    continue: caractere;
+    nome: literal;
+    n1, n2, n3: real;
+fim-variáveis
+
+início
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+        imprima ("Informe o nome do aluno: ");
+        nome:= leia();
+
+        imprima ("Informe a nota da primeira prova: ");
+        n1:= leia();
+
+        imprima ("Informe a nota da segunda prova: ");
+        n2:= leia();
+
+        imprima ("Informe a nota da terceira prova: ");
+        n3:= leia();
+
+        imprima("O aluno ", nome, " obteve a nota aritmética de: ", ((n1 + n2 + n3) / 3));
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+fim
