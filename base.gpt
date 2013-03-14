@@ -1,0 +1,17 @@
+algoritmo base;
+
+variáveis
+    continue: caractere;
+fim-variáveis
+
+início
+
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+        
+
+    fim-enquanto
+
+fim
