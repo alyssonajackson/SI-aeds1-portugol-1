@@ -17,6 +17,9 @@ início
 
      enquanto continue <> 'n' faça
         
+        cont_intervalo:= 0;
+        n:= 0;
+
         para i de 1 até 80 passo 1 faça
 
             imprima("Digite um número: (", i, "/80)");
