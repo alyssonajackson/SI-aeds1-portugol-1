@@ -1,0 +1,38 @@
+/*
+17. Ler 80 números e ao final informar quantos número(s) est(á)ão no intervalo entre 10
+(inclusive) e 150 (inclusive).
+*/
+
+algoritmo intervalo_80_numeros;
+
+variáveis
+     continue: caractere;
+     i, cont_intervalo: inteiro;
+     n: real;
+fim-variáveis
+
+início
+
+     continue:= 'y';
+
+     enquanto continue <> 'n' faça
+        
+        para i de 1 até 80 passo 1 faça
+
+            imprima("Digite um número: (", i, "/80)");
+            n:= leia();
+
+            se n >= 10 e n <= 150 então
+                cont_intervalo:= cont_intervalo + 1;
+            fim-se
+
+        fim-para
+
+        imprima("Números no intervalo: ", cont_intervalo, "\n");
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+     fim-enquanto
+
+fim
