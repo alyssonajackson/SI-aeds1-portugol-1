@@ -1,0 +1,35 @@
+/*
+14. Escrever um algoritmo que leia dois valores inteiro distintos e informe qual é o maior.
+*/
+
+algoritmo compara_maior;
+
+variáveis
+    continue: caractere;
+    a, b: real;
+fim-variáveis
+
+início
+
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+       imprima("Informe o primeiro valor: "); 
+       a:= leia();
+
+       imprima("Informe o segundo valor: "); 
+       b:= leia();
+
+       se a > b então
+           imprima("O maior valor foi o primeiro informado (", a, ")");
+       senão
+           imprima("O maior valor foi o segundo informado (", b, ")");
+       fim-se
+
+       imprima("Deseja continuar? (y/n)");
+       continue:= leia();
+
+    fim-enquanto
+
+fim
