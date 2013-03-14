@@ -1,0 +1,31 @@
+/*
+13. Faça um algoritmo que receba um número e mostre uma mensagem caso este número
+seja maior que 10.
+*/
+
+algoritmo base;
+
+variáveis
+    continue: caractere;
+    n: real;
+fim-variáveis
+
+início
+
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+        imprima("Digite um valor");
+        n:= leia();
+
+        se n > 10 então
+            imprima("O valor informado (", n, ") é maior que 10 (dez).");
+        fim-se
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+
+fim
