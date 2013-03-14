@@ -1,0 +1,56 @@
+/*
+20. A concessionária de veículos "CARANGO VELHO" está vendendo carros com desconto.
+Faça um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de
+vários carros. O desconto deverá ser calculado de acordo com o ano do veículo.
+a- Até 2000 - 12%
+b- acima de 2000 - 7% . O sistema deverá perguntar se deseja continuar calculando desconto
+até que a resposta seja: "(N) Não" . Informar total de carros com ano até 2000 e total geral.
+*/
+
+algoritmo base;
+
+variáveis
+     continue: caractere;
+     nome_veiculo: literal;
+     ano_veiculo, porcentagem_desconto: inteiro;
+     total_de_carros_ano_2000, total_de_carros: inteiro;
+     valor_veiculo, valor_com_desconto: real;
+fim-variáveis
+
+início
+
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+        imprima("Informe o nome do veículo: ");
+        nome_veiculo:= leia();
+
+        imprima("Informe o valor do veículo: ");
+        valor_veiculo:= leia();
+
+        imprima("Informe o ano do veículo: ");
+        ano_veiculo:= leia();
+
+        total_de_carros:= total_de_carros + 1;
+
+        se ano_veiculo <= 2000 então
+            porcentagem_desconto:= 12;
+            total_de_carros_ano_2000:= total_de_carros_ano_2000 + 1;
+        senão
+            porcentagem_desconto:= 7;
+        fim-se
+
+        valor_com_desconto:= valor_veiculo - (valor_veiculo / 100 * porcentagem_desconto);
+
+        imprima("O valor do carro, com desconto é de ", valor_com_desconto);
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+        imprima("O total de carros é: ", total_de_carros);
+        imprima("O total de carros com ano até 2000 é: ", total_de_carros_ano_2000);
+
+    fim-enquanto
+
+fim
