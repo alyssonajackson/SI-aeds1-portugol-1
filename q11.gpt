@@ -1,0 +1,35 @@
+/*
+11. Faça um algoritmo que receba o preço de custo de um produto e mostre o valor de venda.
+Sabe-se que o preço de custo receberá um acréscimo de acordo com um percentual
+informado pelo usuário.
+*/
+
+algoritmo calcula_preco_produto;
+
+variáveis
+    continue: caractere;
+    porcentagem_acrescimo, preco_custo, preco_venda: real;
+fim-variáveis
+
+início
+
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+        imprima("Informe o preço de custo do produto: ");
+        preco_custo:= leia();
+
+        imprima("Informe a porcentagem de acréscimo: ");
+        porcentagem_acrescimo:= leia();
+
+        preco_venda:= preco_custo + (preco_custo / 100 * porcentagem_acrescimo);
+
+        imprima("O preço de venda deve ser: ", preco_venda);
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+
+fim
