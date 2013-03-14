@@ -1,0 +1,24 @@
+algoritmo consumo_medio_veiculo;
+
+variáveis
+    continue: caractere;
+    distancia_total, combustivel_gasto: real;
+fim-variáveis
+
+início
+    continue:= 1;
+
+    enquanto continue <> 'n' faça
+
+        imprima ("Digite o primeiro valor para a distância total (em kilômetros): ");
+        distancia_total:= leia();
+        imprima ("Digite o segundo para a quantidade de combustível consumida (em litros): ");
+        combustivel_gasto:= leia();
+
+        imprima("Consumo médio de combustível: ", distancia_total / combustivel_gasto, " km/l.");
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+fim
