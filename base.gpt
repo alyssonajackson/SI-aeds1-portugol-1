@@ -1,20 +1,20 @@
 algoritmo base;
 
 variáveis
-    continue: caractere;
+     continue: caractere;
 fim-variáveis
 
 início
 
-    continue:= 'y';
+     continue:= 'y';
 
-    enquanto continue <> 'n' faça
+     enquanto continue <> 'n' faça
 
         
 
-        imprima("Deseja continuar? (y/n)");
-        continue:= leia();
+         imprima("Deseja continuar? (y/n)");
+         continue:= leia();
 
-    fim-enquanto
+     fim-enquanto
 
 fim
