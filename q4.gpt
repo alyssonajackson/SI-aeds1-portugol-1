@@ -1,0 +1,40 @@
+/*
+  Escrever um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de
+  vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de
+  comissão sobre suas vendas efetuadas, informar o seu nome, o salário fixo e salário no final do
+  mês.
+*/
+
+algoritmo calcula_comissao;
+
+variáveis
+    continue: caractere;
+    nome: literal;
+    salario_fixo, total_vendido, salario: real;
+    porcentagem_comissao: inteiro;
+fim-variáveis
+
+início
+    continue:= 'y';
+    porcentagem_comissao:= 15;
+
+    enquanto continue <> 'n' faça
+
+        imprima ("Digite o nome do vendedor: ");
+        nome:= leia();
+
+        imprima ("Informe o salário fixo desse vendedor: ");
+        salario_fixo:= leia();
+
+        imprima ("Informe o valor total vendido por esse vendedor (em reais, ex: 123.25): ");
+        total_vendido:= leia();
+
+        salario:= salario_fixo + (total_vendido / 100 * porcentagem_comissao);
+
+        imprima("O funcionário ", nome, " tem o salário de ", salario_fixo, " mas irá receber ", salario, " devido à porcentagem de ", porcentagem_comissao, "% de comissão");
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+fim
