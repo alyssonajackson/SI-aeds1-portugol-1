@@ -1,0 +1,27 @@
+algoritmo quatro_operacoes_a_partir_de_2_valores;
+
+variáveis
+    continue: caractere;
+    a, b: real;
+fim-variáveis
+
+início
+    continue:= 1;
+
+    enquanto continue <> 'n' faça
+
+        imprima ("Digite o primeiro valor: ");
+        a:= leia();
+        imprima ("Digite o segundo valor: ");
+        b:= leia();
+
+        imprima("O resultado da soma é: ", a+b);
+        imprima("O resultado da subtração é: ", a-b);
+        imprima("O resultado da multiplicação é: ", a*b);
+        imprima("O resultado da divisão é: ", a/b);
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+fim
