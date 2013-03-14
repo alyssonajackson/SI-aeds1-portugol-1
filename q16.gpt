@@ -1,0 +1,56 @@
+/*
+16. Escrever um algoritmo que leia o nome e as três notas obtidas por um aluno durante o
+semestre. Calcular a sua média (aritmética), informar o nome e sua menção:
+    - Aprovado (media >= 7)
+    - Reprovado (media <= 5)
+    - Recuperação (media entre 5.1 a 6.9).
+*/
+
+algoritmo aluno_aprovado;
+
+variáveis
+    continue: caractere;
+    nome_aluno, mencao: literal;
+    n1, n2, n3, media: real;
+fim-variáveis
+
+início
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+        imprima ("Informe o nome do aluno: ");
+        nome_aluno:= leia();
+
+        imprima ("Informe a nota da primeira prova: ");
+        n1:= leia();
+
+        imprima ("Informe a nota da segunda prova: ");
+        n2:= leia();
+
+        imprima ("Informe a nota da terceira prova: ");
+        n3:= leia();
+
+        media:= ((n1 + n2 + n3) / 3);
+
+        imprima("O aluno ", nome_aluno, " obteve a nota aritmética de: ", media);
+        
+        se media >= 7 então
+            mencao:= "Aprovado";
+        senão
+            se media <= 5 então
+                mencao:= "Reprovado";
+            senão
+                se media >= 5.1 e media <= 6.9 então
+                    mencao:= "Recuperação";
+                fim-se
+            fim-se
+        fim-se
+
+        imprima("O aluno ", nome_aluno, " está ", mencao);
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+fim
