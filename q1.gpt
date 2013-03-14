@@ -1,0 +1,24 @@
+algoritmo olamundo;
+
+variáveis
+    continue: caractere;
+    a, b: real;
+fim-variáveis
+
+início
+    continue:= 1;
+
+    enquanto continue <> 'n' faça
+
+        imprima ("Digite o primeiro valor a ser somado: ");
+        a:= leia();
+        imprima ("Digite o segundo valor a ser somado: ");
+        b:= leia();
+
+        imprima("O resultado da soma é: ", a+b);
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+fim
