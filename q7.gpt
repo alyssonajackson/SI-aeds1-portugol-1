@@ -1,0 +1,30 @@
+/*
+7. Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A
+fórmula de conversão é:
+F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
+*/
+
+algoritmo celsius_to_fahrenheit;
+
+variáveis
+    continue: caractere;
+    c, f: real;
+fim-variáveis
+
+início
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+        imprima ("Digite o valor da temperatura, em Celsius: ");
+        c:= leia();
+
+        f:= (9 * c + 160) / 5;
+
+        imprima("A temperatura em Fahrenheit é: ", f);
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+fim
