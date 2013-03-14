@@ -1,0 +1,48 @@
+/*
+19. Escrever um algoritmo que leia o nome e o sexo de 56 pessoas e informe o nome e se ela é
+homem ou mulher. No final informe total de homens e de mulheres.
+*/
+
+algoritmo contagem_genero;
+
+variáveis
+     continue, sexo: caractere;
+     nome: literal;
+     i, total_m, total_f: inteiro;
+fim-variáveis
+
+início
+
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+        total_f:= 0;
+        total_m:= 0;
+        nome:= "";
+
+        para i de 1 até 3 passo 1 faça
+            imprima("Digite o nome da pessoa de número ", i);
+            nome:= leia();
+
+            imprima("Digite o sexo da pessoa de número ", i, " (m para masculino, f para feminino)");
+            sexo:= leia();
+
+            se sexo = 'm' então
+                total_m:= total_m + 1;
+            senão
+                se sexo = 'f' então
+                    total_f:= total_f + 1;
+                fim-se
+            fim-se
+        fim-para
+
+        imprima("O total de homens é: ", total_m);
+        imprima("O total de mulheres é: ", total_f);
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+
+fim
