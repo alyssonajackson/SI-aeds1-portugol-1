@@ -2,7 +2,7 @@
 1.Faça um algoritmo que receba dois números e exiba o resultado da sua soma.
 */
 
-algoritmo olamundo;
+algoritmo soma_2_numeros;
 
 variáveis
     continue: caractere;
