@@ -1,0 +1,33 @@
+/*
+8. Elaborar um algoritmo que efetue a apresentação do valor da conversão em real (R$) de um
+valor lido em dólar (US$). O algoritmo deverá solicitar o valor da cotação do dólar e também a
+quantidade de dólares disponíveis com o usuário.
+*/
+
+algoritmo dolar_to_real;
+
+variáveis
+    continue: caractere;
+    cotacao_dolar, valor_em_dolar, valor_em_real: real;
+fim-variáveis
+
+início
+    continue:= 'y';
+
+    enquanto continue <> 'n' faça
+
+        imprima ("Informe a cotação do dólar: ");
+        cotacao_dolar:= leia();
+
+        imprima ("Digite o segundo valor (em dólar), a ser convertido (para reais): ");
+        valor_em_dolar:= leia();
+
+        valor_em_real:= valor_em_dolar * cotacao_dolar;
+
+        imprima("O valor convertido, em reais é de: ", valor_em_real);
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+fim
