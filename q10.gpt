@@ -1,0 +1,31 @@
+/*
+10. A Loja Mamão com Açúcar está vendendo seus produtos em 5 (cinco) prestações sem
+juros. Faça um algoritmo que receba um valor de uma compra e mostre o valor das prestações.
+*/
+
+algoritmo valor_pretacoes;
+
+variáveis
+    continue: caractere;
+    valor_compra, valor_prestacoes: real;
+    num_prestacoes: inteiro;
+fim-variáveis
+
+início
+    continue:= 'y';
+    num_prestacoes:= 5;
+
+    enquanto continue <> 'n' faça
+
+        imprima ("Digite o valor da compra: ");
+        valor_compra:= leia();
+
+        valor_prestacoes:= valor_compra / num_prestacoes;
+
+        imprima("O valor de cada prestação é de: ", valor_prestacoes);
+
+        imprima("Deseja continuar? (y/n)");
+        continue:= leia();
+
+    fim-enquanto
+fim
